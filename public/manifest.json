@@ -1,0 +1,16 @@
+{
+  "manifest_version": 1,
+  "id": "net.dmsecretweapon.aigenerator",
+  "name": "DM Secret Weapon - AI Scene Generator",
+  "version": "0.1.0",
+  "description": "Generate dynamic scenes, tokens, and encounters using AI for your D&D sessions in Owlbear Rodeo",
+  "author": "DM Secret Weapon",
+  "icon": "/icon.svg",
+  "action": {
+    "title": "AI Scene Generator",
+    "icon": "/icon.svg",
+    "popover": "/index.html",
+    "height": 600,
+    "width": 400
+  }
+}
