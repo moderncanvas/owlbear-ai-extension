@@ -12,26 +12,22 @@
   </header>
 
   <div class="tabs">
-    <div
+    <button
       class="tab"
       class:active={activeTab === 'scene'}
-      on:click={() => activeTab = 'scene'}
-      on:keypress={() => activeTab = 'scene'}
-      role="tab"
-      tabindex="0"
+      onclick={() => activeTab = 'scene'}
+      type="button"
     >
       Generate Scene
-    </div>
-    <div
+    </button>
+    <button
       class="tab"
       class:active={activeTab === 'tokens'}
-      on:click={() => activeTab = 'tokens'}
-      on:keypress={() => activeTab = 'tokens'}
-      role="tab"
-      tabindex="0"
+      onclick={() => activeTab = 'tokens'}
+      type="button"
     >
       Add Tokens
-    </div>
+    </button>
   </div>
 
   <main>
