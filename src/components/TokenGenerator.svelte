@@ -112,7 +112,7 @@
 
   <button
     class="primary"
-    onclick={generateTokens}
+    on:click={generateTokens}
     disabled={loading || !creatureType.trim()}
   >
     {#if loading}
@@ -135,25 +135,25 @@
     <div class="quick-buttons">
       <button
         class="secondary quick-btn"
-        onclick={() => { creatureType = 'Goblin'; count = 4; }}
+        on:click={() => { creatureType = 'Goblin'; count = 4; }}
       >
         4× Goblins
       </button>
       <button
         class="secondary quick-btn"
-        onclick={() => { creatureType = 'Skeleton'; count = 3; }}
+        on:click={() => { creatureType = 'Skeleton'; count = 3; }}
       >
         3× Skeletons
       </button>
       <button
         class="secondary quick-btn"
-        onclick={() => { creatureType = 'Guard'; count = 2; }}
+        on:click={() => { creatureType = 'Guard'; count = 2; }}
       >
         2× Guards
       </button>
       <button
         class="secondary quick-btn"
-        onclick={() => { creatureType = 'Dragon'; count = 1; variant = 'Adult Red'; }}
+        on:click={() => { creatureType = 'Dragon'; count = 1; variant = 'Adult Red'; }}
       >
         1× Dragon
       </button>

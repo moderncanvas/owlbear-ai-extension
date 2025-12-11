@@ -103,7 +103,7 @@
 
     <button
       class="primary generate-btn"
-      onclick={generateScene}
+      on:click={generateScene}
       disabled={loading || !description.trim()}
     >
       {#if loading}
@@ -134,14 +134,14 @@
       </div>
 
       <div class="button-group">
-        <button class="primary" onclick={addToOwlbear} disabled={loading}>
+        <button class="primary" on:click={addToOwlbear} disabled={loading}>
           {#if loading}
             <span class="loading"></span> Adding...
           {:else}
             ➕ Add to Owlbear Rodeo
           {/if}
         </button>
-        <button class="secondary" onclick={reset}>
+        <button class="secondary" on:click={reset}>
           🔄 Generate New
         </button>
       </div>
