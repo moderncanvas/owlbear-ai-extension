@@ -72,6 +72,7 @@
     <label for="creature">Creature Type</label>
     <input
       id="creature"
+      name="creature"
       type="text"
       bind:value={creatureType}
       placeholder="e.g., Goblin, Orc, Dragon"
@@ -89,6 +90,7 @@
       <label for="count">Count</label>
       <input
         id="count"
+        name="count"
         type="number"
         bind:value={count}
         min="1"
@@ -100,6 +102,7 @@
       <label for="variant">Variant (Optional)</label>
       <input
         id="variant"
+        name="variant"
         type="text"
         bind:value={variant}
         placeholder="e.g., Raider, Elite"

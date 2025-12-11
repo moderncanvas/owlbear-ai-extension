@@ -70,16 +70,17 @@
       <label for="description">Scene Description</label>
       <textarea
         id="description"
+        name="description"
         bind:value={description}
         placeholder="Describe the scene... e.g., 'A dimly lit tavern with 3 patrons and a bartender'"
         rows="4"
-      />
+      ></textarea>
     </div>
 
     <div class="form-row">
       <div class="form-group">
         <label for="difficulty">Difficulty</label>
-        <select id="difficulty" bind:value={difficulty}>
+        <select id="difficulty" name="difficulty" bind:value={difficulty}>
           <option value="easy">Easy</option>
           <option value="medium">Medium</option>
           <option value="hard">Hard</option>
@@ -91,6 +92,7 @@
         <label for="party-size">Party Size</label>
         <input
           id="party-size"
+          name="party-size"
           type="number"
           bind:value={partySize}
           min="1"
