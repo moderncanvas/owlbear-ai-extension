@@ -1,4 +1,5 @@
-import OBR, { buildImage, buildText, Item } from '@owlbear-rodeo/sdk';
+import OBR, { buildImage, buildText } from '@owlbear-rodeo/sdk';
+import type { Item } from '@owlbear-rodeo/sdk';
 import type { TokenData, SceneData } from '../types';
 
 /**
